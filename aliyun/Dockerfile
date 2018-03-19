@@ -13,7 +13,7 @@ RUN wget -O install.sh http://download.bt.cn/install/install.sh \
 RUN echo -e "#! /bin/bash\n  cd /www/server/panel \n  python tools.pyc panel nopost.cn \n service bt start\n " > /hello.sh
 RUN chmod +x /hello.sh
 EXPOSE 21 22 80 443 888 3306 8888
-VOLUME ["/www/wwwroot:/www/wwwroot"] 
-VOLUME ["/www/backup":"/www/backup"] 
+VOLUME ["/www/wwwroot"] 
+VOLUME ["/www/backup"] 
 VOLUME ["/var/run/dbus/system_bus_socket"] 
 CMD bash /hello.sh && /usr/sbin/sshd -D
