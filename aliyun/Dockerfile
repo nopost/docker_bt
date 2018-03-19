@@ -16,4 +16,4 @@ EXPOSE 21 22 80 443 888 3306 8888
 VOLUME ["/www/wwwroot"] 
 VOLUME ["/www/backup"] 
 VOLUME ["/var/run/dbus/system_bus_socket"] 
-CMD bash /www/shell/hello.sh && /usr/sbin/sshd -D
+CMD bash /hello.sh && /usr/sbin/sshd -D
