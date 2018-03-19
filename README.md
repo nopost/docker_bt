@@ -7,7 +7,7 @@
 已开放端口： 21 22 80 443 888 3306 8888**
 
 
-**https://github.com/nopost/docker_bt*
+**https://github.com/nopost/docker_bt**
 
 
 公网地址: docker pull registry.cn-hangzhou.aliyuncs.com/nopost/bt
