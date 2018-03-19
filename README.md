@@ -9,13 +9,12 @@
 
 https://github.com/nopost/docker_bt
 
-公网地址: docker pull registry.cn-hangzhou.aliyuncs.com/nopost/bt
-
-经典内网: docker pull registry-internal.cn-hangzhou.aliyuncs.com/nopost/bt
-
-VPC网络: docker pull registry-vpc.cn-hangzhou.aliyuncs.com/nopost/bt
-
+公网地址: docker pull registry.cn-hangzhou.aliyuncs.com/nopost/docker-bt-panel
+经典内网: docker pull registry-internal.cn-hangzhou.aliyuncs.com/nopost/docker-bt-panel
+VPC网络: docker pull registry-vpc.cn-hangzhou.aliyuncs.com/nopost/docker-bt-panel
 代码仓库: https://github.com/nopost/docker_bt
+
+
 
 
 
