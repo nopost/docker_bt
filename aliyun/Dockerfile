@@ -17,4 +17,4 @@ RUN chmod +x /hello.sh
 EXPOSE 21 22 80 443 888 3306 8888
 VOLUME ["/www/wwwroot"] 
 VOLUME ["/www/backup"]
-CMD /hello.sh
+CMD /usr/sbin/init && /hello.sh
