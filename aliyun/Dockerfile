@@ -14,6 +14,7 @@ RUN wget -O install.sh http://download.bt.cn/install/install.sh \
  && printf "y\n0"|bash ./install.sh
 RUN echo -e "#! /bin/bash\n  cd /www/server/panel \n  python tools.pyc panel nopost.cn \n /etc/init.d/bt start\n /usr/sbin/sshd" > /hello.sh
 RUN chmod +x /hello.sh
-EXPOSE 80 8888
-VOLUME ["/www"] 
+EXPOSE 21 22 80 443 888 3306 8888
+VOLUME ["/www/wwwroot"] 
+VOLUME ["/www/backup"]
 CMD bash /hello.sh
