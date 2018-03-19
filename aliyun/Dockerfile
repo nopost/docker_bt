@@ -12,7 +12,7 @@ RUN mkdir -p /root/.ssh && chown root.root /root && chmod 700 /root/.ssh
 RUN echo 'root:nopost.cn' | chpasswd
 RUN wget -O install.sh http://download.bt.cn/install/install.sh \
  && printf "y\n0"|bash ./install.sh
-RUN echo -e "#! /bin/bash\n  cd /www/server/panel \n  python tools.pyc panel nopost.cn \n /usr/sbin/sshd -D\n" > /hello.sh
+RUN echo -e "#!/bin/bash\n python /www/server/panel/tools.pyc panel nopost.cn \n /usr/sbin/sshd -D\n" > /hello.sh
 RUN chmod +x /hello.sh
 EXPOSE 21 22 80 443 888 3306 8888
 VOLUME ["/www/wwwroot"] 
