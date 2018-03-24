@@ -1,0 +1,2 @@
+
+docker run -ti --name btwww  -p 21:21 -p 10022:22 -p 80:80 -p 443:443 -p 888:888 -p 3306:3306 -p 8888:8888  -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v /www:/www:rw nopost/bt5.8  /bin/bash
